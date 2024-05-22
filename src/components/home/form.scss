@@ -1,0 +1,91 @@
+body {
+  background-color: #aaa1;
+  backdrop-filter: blur(3px);
+}
+
+.form {
+  width: 800px;
+  background-color: cadetblue;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+  margin: 40px auto;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px #aaa;
+  input {
+    width: 100%;
+    padding: 15px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid gray;
+    box-shadow: inset 1px 1px 5px #aaa4;
+  }
+  button {
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+    border: 1px solid blue;
+    transition: 0.8s;
+  }
+
+  button:hover {
+    background-color: white;
+    color: blue;
+    border: 1px solid blue;
+  }
+
+  select {
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: inset 1px 1px 5px #aaa4;
+    border: 1px solid gray;
+    outline: none;
+  }
+}
+
+.table {
+  border-collapse: collapse;
+  margin: 0 auto;
+  background-color: white;
+  th {
+    background-color: cadetblue;
+    padding: 15px !important;
+    color: white;
+  }
+  th,
+  td {
+    width: 135px;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid rgb(190, 189, 189);
+  }
+
+  &__title {
+    color: white;
+  }
+
+  &__edit {
+    background-color: blue;
+    color: white;
+    padding: 5px 25px;
+    border: none;
+    border-radius: 5px;
+  }
+
+  &__delete {
+    background-color: red;
+    color: white;
+    padding: 5px 25px;
+    border: none;
+    border-radius: 5px;
+  }
+}
+.table tr:nth-child(even) {
+  background-color: cadetblue;
+  color: white;
+}
